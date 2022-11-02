@@ -1,0 +1,174 @@
+{
+    "xxom_tpklst_confs": [
+        {
+            "brand_type": "境內收購品牌",
+            "brand_version": "NEXPERIA",
+            "carton": "001",
+            "carton_seq": "0001",
+            "cat": null,
+            "coolong": "China",
+            "corp": "1281234-66119205",
+            "country": "CHN",
+            "created_by": -1.000000,
+            "creation_date": 1665023953000,
+            "ctnqty": 1.000000,
+            "cu_prno": "086-10114-00",
+            "datecode": "202208",
+            "delivery_name": "66119205",
+            "g_w": 0.380000,
+            "high": 12.000000,
+            "item_cnt": 56070623.000000,
+            "last_update_date": 1665023953000,
+            "last_update_login": -1.000000,
+            "last_updated_by": -1.000000,
+            "length": 22.000000,
+            "lottable06": "00MMMMMMMM",
+            "lottable07": "T&R",
+            "lottable08": null,
+            "lottable09": null,
+            "lottable10": null,
+            "lottable11": null,
+            "lottable12": null,
+            "lottable16": null,
+            "lottable17": null,
+            "lottable19": null,
+            "lottable20": null,
+            "lottable21": null,
+            "n_w": 0.180000,
+            "oela_line": "1.1",
+            "org_id": 320,
+            "organization_code": "02A",
+            "orno": "2110435446",
+            "packingno": null,
+            "pallet": null,
+            "pdno": "21281234-66119205",
+            "prno": "BAT54L,315",
+            "process_flag": "0",
+            "qty": 10000.000000,
+            "seqno": "00010 GPU",
+            "ship_date": 1665023953000,
+            "storage_desc": "4B15B03:1",
+            "storage_totqty": 1.000000,
+            "unique_caseid": "12222100400000000273",
+            "vendor_datecode": "2208",
+            "vendor_lot": "WJPB0723100A",
+            "wide": 22.000000,
+            "wms_version": 0.000000,
+            "pmc": "DWD"
+        }
+    ]
+}
+
+
+
+
+
+
+@JsonProperty("brand_type")
+	private String brandType;
+	@JsonProperty("brand_version")
+	private String brandVersion;
+	@JsonProperty("carton")
+	private String carton;
+	@JsonProperty("carton_seq")
+	private String cartonSeq;
+	@JsonProperty("cat")
+	private String cat;
+	@JsonProperty("coolong")
+	private String cooLong;
+	@JsonProperty("corp")
+	private String corp;
+	@JsonProperty("country")
+	private String country;
+	@JsonProperty("created_by")
+	private BigDecimal createdBy;
+	@JsonProperty("creation_date")
+	private Date creationDate;
+	@JsonProperty("ctnqty")
+	private BigDecimal ctnQty;
+	@JsonProperty("cu_prno")
+	private String cuPrno;
+	@JsonProperty("datecode")
+	private String datecode;
+	@JsonProperty("delivery_name")
+	private String deliveryName;
+	@JsonProperty("g_w")
+	private BigDecimal gw;
+	@JsonProperty("high")
+	private BigDecimal high;
+	@JsonProperty("item_cnt")
+	private BigDecimal itemCnt;
+	@JsonProperty("last_update_date")
+	private Date lastUpdateDate;
+	@JsonProperty("last_update_login")
+	private BigDecimal lastUpdateLogin;
+	@JsonProperty("last_updated_by")
+	private BigDecimal lastUpdateBy;
+	@JsonProperty("length")
+	private BigDecimal length;
+	@JsonProperty("lottable06")
+	private String lottable06;
+	@JsonProperty("lottable07")
+	private String lottable07;
+	@JsonProperty("lottable08")
+	private String lottable08;
+	@JsonProperty("lottable09")
+	private String lottable09;
+	@JsonProperty("lottable10")
+	private String lottable10;
+	@JsonProperty("lottable11")
+	private String lottable11;
+	@JsonProperty("lottable12")
+	private String lottable12;
+	@JsonProperty("lottable16")
+	private String lottable16;
+	@JsonProperty("lottable17")
+	private String lottable17;
+	@JsonProperty("lottable19")
+	private String lottable19;
+	@JsonProperty("lottable20")
+	private String lottable20;
+	@JsonProperty("lottable21")
+	private String lottable21;
+	@JsonProperty("n_w")
+	private BigDecimal nw;
+	@JsonProperty("oela_line")
+	private String oelaLine;
+	@JsonProperty("org_id")
+	private Integer orgId;
+	@JsonProperty("organization_code")
+	private String organizationCode;
+	@JsonProperty("orno")
+	private String orno;
+	@JsonProperty("packingno")
+	private String packingNo;
+	@JsonProperty("pallet")
+	private String pallet;
+	@JsonProperty("pdno")
+	private String pdNo;
+	@JsonProperty("prno")
+	private String prNo;
+	@JsonProperty("process_flag")
+	private String processFlag;
+	@JsonProperty("qty")
+	private BigDecimal qty;
+	@JsonProperty("seqno")
+	private String seqNo;
+	@JsonProperty("ship_date")
+	private Date shipDate;
+	@JsonProperty("storage_desc")
+	private String storageDesc;
+	@JsonProperty("storage_totqty")
+	private BigDecimal storageTotQty;
+	@JsonProperty("unique_caseid")
+	private String uniqueCaseId;
+	@JsonProperty("vendor_datecode")
+	private String vendorDatecode;
+	@JsonProperty("vendor_lot")
+	private String vwideendorLot;
+	@JsonProperty("wide")
+	private BigDecimal wide;
+	@JsonProperty("wms_version")
+	private BigDecimal wmsVersion;
+	@JsonProperty("pmc")
+    private String pmc;

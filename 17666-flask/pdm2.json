@@ -1,0 +1,111 @@
+{
+    "xxom_ehub_pdm2": [
+        {
+            "batch_id": null,
+            "chg_invoice_date": null,
+            "chg_reason": null,
+            "corp": "219",
+            "created_by": "-1",
+            "creation_date": "2022-10-06T01:23:52.878Z",
+            "deliverydate": "20221005",
+            "deliverytime": null,
+            "doc_type": "DROP_RX",
+            "doorlane": null,
+            "emp_code": "SYS",
+            "erpso": "RX221000019",
+            "externorderkey": "RX221000019",
+            "last_update_date": "2022-10-06T01:23:52.878Z",
+            "last_updated_by": "-1",
+            "last_updated_login": -1,
+            "misno": null,
+            "move_order_no": null,
+            "orderdocstatuse": "0",
+            "orderkey": "1006000010",
+            "pack_cnt": 0,
+            "pdno_del": "RX221000019",
+            "post_time": "2022-10-06T01:23:52.878Z",
+            "status_remark": null,
+            "tr_flg": "0",
+            "upd_time": "20221006"
+        }
+    ]
+}
+
+
+@JsonProperty("batch_id")
+    private String wmsBatchId;
+
+    @JsonProperty("chg_invoice_date")
+    private String wmsChgInvoiceDate;
+
+    @JsonProperty("chg_reason")
+    private String wmsChgReason;
+
+    @JsonProperty("corp")
+    private String wmsCorp;
+
+    @JsonProperty("created_by")
+    private String wmsCreatedBy;
+
+    @JsonProperty("creation_date")
+    private String wmsCreationDate;
+
+    @JsonProperty("deliverydate")
+    private String wmsDeliveryDate;
+
+    @JsonProperty("deliverytime")
+    private String wmsDeleveryTime;
+
+    @JsonProperty("doc_type")
+    private String wmsDocType;
+
+    @JsonProperty("doorlane")
+    private String wmsDoorLane;
+
+    @JsonProperty("emp_code")
+    private String wmsEmpCode;
+
+    @JsonProperty("erpso")
+    private String wmsErpSo;
+
+    @JsonProperty("externorderkey")
+    private String wmsExternalOrderKey;
+
+    @JsonProperty("last_update_date")
+    private String wmsLastUpdateDate;
+
+    @JsonProperty("last_updated_by")
+    private String wmsLastUpdatedBy;
+
+    @JsonProperty("last_updated_login")
+    private Integer wmsUpdatedLogin;
+
+    @JsonProperty("misno")
+    private String wmsMisno;
+
+    @JsonProperty("move_order_no")
+    private String wmsMoveOrderNo;
+
+    @JsonProperty("orderdocstatuse")
+    private String wmsOrderDocStatus;
+
+    @JsonProperty("orderkey")
+    private String wmsOrderKey;
+
+    @JsonProperty("pack_cnt")
+    private Integer wmsPackCnt;
+
+    @JsonProperty("pdno_del")
+    private String wmsPdNoDel;
+
+    @JsonProperty("post_time")
+    private String wmsPostTime;
+
+    @JsonProperty("status_remark")
+    private String wmsStatusRemark;
+
+    @JsonProperty("tr_flg")
+    private String wmsTrFlag;
+
+    @JsonProperty("upd_time")
+    private String wmsUpdTime;

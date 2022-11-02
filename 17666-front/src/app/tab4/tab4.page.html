@@ -1,0 +1,98 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>快速查詢</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+
+    <ion-row>
+      <ion-searchbar (search)="enterKeyIn()" [(ngModel)]="searchString" show-clear-button="always" clear-icon="trash-bin" value="Custom Clear Icon">
+
+      </ion-searchbar>
+    </ion-row>
+
+
+    <ion-item-group>
+      <ion-item-divider>
+        <ion-label>您是不是想問...</ion-label>
+      </ion-item-divider>
+
+      <div>
+        <ion-accordion-group>
+          <ion-accordion *ngIf="this.finalAns[0]" value="first">
+            <ion-item slot="header" color="light" text-wrap>
+              <ion-icon name="help-circle-outline"></ion-icon> <ion-label><h1>{{this.finalAns[0].q}} <ion-icon color="warning" [name]="this.finalAns[0].likely < 80 ? 'star':'null'"></ion-icon> <ion-icon color="warning" [name]="this.finalAns[0].likely < 80 ? 'star':'null'"></ion-icon> <ion-icon color="warning" [name]="this.finalAns[0].likely < 100 ? 'star':'null'"></ion-icon></h1> <p style="font-size:20px;">{{this.finalAns[0].type1}} - {{this.finalAns[0].type2}}&emsp;TOP 1</p></ion-label>
+            </ion-item>
+            <div style="color:#003eff" class="ion-padding" slot="content" ansSize>
+              <h2>ans：<br>{{this.finalAns[0].a}}</h2>
+            </div>
+          </ion-accordion>
+          <ion-accordion *ngIf="this.finalAns[1]" value="second" >
+            <ion-item slot="header" color="light" text-wrap>
+              <ion-icon name="help-circle-outline"></ion-icon><ion-label><h1>{{this.finalAns[1].q}} <ion-icon color="warning" [name]="this.finalAns[1].likely < 80 ? 'star':'null'"></ion-icon> <ion-icon color="warning" [name]="this.finalAns[1].likely < 80 ? 'star':'null'"></ion-icon> <ion-icon color="warning" [name]="this.finalAns[1].likely < 100 ? 'star':'null'"></ion-icon></h1> <p style="font-size:20px;">{{this.finalAns[1].type1}} - {{this.finalAns[1].type2}}&emsp;TOP 2</p></ion-label>
+            </ion-item>
+            <div style="color:#003eff" class="ion-padding" slot="content">
+              <h2>ans：<br>{{this.finalAns[1].a}}</h2>
+            </div>
+          </ion-accordion>
+          <ion-accordion *ngIf="this.finalAns[2]" value="thrid">
+            <ion-item slot="header" color="light" text-wrap>
+              <ion-icon name="help-circle-outline"></ion-icon><ion-label><h1>{{this.finalAns[2].q}} <ion-icon color="warning" [name]="this.finalAns[2].likely < 80 ? 'star':'null'"></ion-icon> <ion-icon color="warning" [name]="this.finalAns[2].likely < 80 ? 'star':'null'"></ion-icon> <ion-icon color="warning" [name]="this.finalAns[2].likely < 100 ? 'star':'null'"></ion-icon></h1> <p style="font-size:20px;">{{this.finalAns[2].type1}} - {{this.finalAns[2].type2}}&emsp;TOP 3</p></ion-label>
+            </ion-item>
+            <div style="color:#003eff" class="ion-padding" slot="content" ansSize>
+              <h2>ans：<br>{{this.finalAns[2].a}}</h2>
+            </div>
+          </ion-accordion>
+          <ion-accordion *ngIf="this.finalAns[3]" value="fourth">
+            <ion-item slot="header" color="light" text-wrap>
+              <ion-icon name="help-circle-outline"></ion-icon><ion-label><h1>{{this.finalAns[3].q}} <ion-icon color="warning" [name]="this.finalAns[3].likely < 80 ? 'star':'null'"></ion-icon> <ion-icon color="warning" [name]="this.finalAns[3].likely < 80 ? 'star':'null'"></ion-icon> <ion-icon color="warning" [name]="this.finalAns[3].likely < 100 ? 'star':'null'"></ion-icon></h1> <p style="font-size:20px;">{{this.finalAns[3].type1}} - {{this.finalAns[3].type2}}&emsp;TOP 4</p></ion-label>
+            </ion-item>
+            <div style="color:#003eff" class="ion-padding" slot="content" ansSize>
+              <h2>ans：<br>{{this.finalAns[3].a}}</h2>
+            </div>
+          </ion-accordion>
+          <ion-accordion *ngIf="this.finalAns[4]" value="fifth">
+            <ion-item slot="header" color="light" text-wrap>
+              <ion-icon name="help-circle-outline"></ion-icon><ion-label><h1>{{this.finalAns[4].q}} <ion-icon color="warning" [name]="this.finalAns[4].likely < 80 ? 'star':'null'"></ion-icon> <ion-icon color="warning" [name]="this.finalAns[4].likely < 80 ? 'star':'null'"></ion-icon> <ion-icon color="warning" [name]="this.finalAns[4].likely < 100 ? 'star':'null'"></ion-icon></h1> <p style="font-size:20px;">{{this.finalAns[4].type1}} - {{this.finalAns[4].type2}}&emsp;TOP 5</p></ion-label>
+            </ion-item>
+            <div style="color:#003eff" class="ion-padding" slot="content" ansSize>
+              <h2>ans：<br>{{this.finalAns[4].a}}</h2>
+            </div>
+          </ion-accordion>
+        </ion-accordion-group>
+      </div>
+
+
+      <!--
+      <ion-item>
+                <ion-icon name="help-outline"></ion-icon>
+        <ion-label>如何查詢客戶AR?</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>為什麼AR已沖銷，但額度查詢中"票據金額"顯示有餘額?</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>現在客戶的逾期貨款有多少?</ion-label>
+      </ion-item>
+    </ion-item-group>
+
+    <ion-item-group>
+      <ion-item-divider>
+        <ion-icon name="headset-outline"></ion-icon>
+        <ion-label>Ans</ion-label>
+      </ion-item-divider>
+
+      <ion-card-content>
+        可進oracle»AR Balance Inquiry，到期金額請參考欄位"帳款兌現日"及對應的"應收餘額(作帳幣)"，
+        開票日期請參考欄位"India Invoice Date"，發票號請參考欄位"金稅號碼(RMB)/發票號碼(USD)"
+      </ion-card-content>
+
+-->
+
+    </ion-item-group>
+  </ion-grid>
+
+</ion-content>
+

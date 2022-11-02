@@ -1,0 +1,18 @@
+div.container4 {
+  height: 10em;
+  position: relative;
+  top: 50%;
+  text-align: center}
+
+div.container4 image {
+  margin: 0;
+  background: yellow;
+  position: absolute;
+
+  margin-right: -50%;
+  transform: translate(-50%, -50%) }
+
+
+div.ansSize {
+  font-size: x-large;
+}

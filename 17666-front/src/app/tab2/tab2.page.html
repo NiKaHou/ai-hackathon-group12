@@ -1,0 +1,61 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>分類查詢</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-list>
+          <ion-item>
+            <ion-select [(ngModel)]="selectValue" interface="popover" placeholder="類別項目" (ngModelChange)="optionOnChange($event)">
+              <ion-select-option value="1">信用管理-出貨</ion-select-option>
+              <ion-select-option value="2">信用管理-客戶額度</ion-select-option>
+              <ion-select-option value="3">客戶管理-供應商</ion-select-option>
+              <ion-select-option value="4">客戶管理-客戶建檔</ion-select-option>
+              <ion-select-option value="5">帳務管理-AR</ion-select-option>
+              <ion-select-option value="6">帳務管理-票據</ion-select-option>
+              <ion-select-option value="7">帳務管理-發票</ion-select-option>
+              <ion-select-option value="8">授權書-授權書</ion-select-option>
+              <ion-select-option value="9">其它</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!--
+  <ion-grid>
+    <ion-card *ngFor="let item of items$ | async">
+      <ion-accordion-group>
+        <ion-accordion value={{item.value}}>
+          <ion-item slot="header" color="light">
+            <ion-label>{{item.Q}}</ion-label>
+          </ion-item>
+          <div class="ion-padding" slot="content">
+            {{item.A}}
+          </div>
+        </ion-accordion>
+      </ion-accordion-group>
+    </ion-card>
+  </ion-grid>
+-->
+
+  <ion-grid>
+    <ion-card *ngFor="let item of filter">
+
+      <ion-card-header>
+        <ion-card-subtitle>{{item.type1}} - {{item.type2}}</ion-card-subtitle>
+        <ion-card-title>{{item.q}}</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        {{item.a}}
+      </ion-card-content>
+    </ion-card>
+
+  </ion-grid>
+</ion-content>
